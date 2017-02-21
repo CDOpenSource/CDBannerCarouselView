@@ -271,6 +271,33 @@ NSInteger const NumberOfItemsInSection = 10000;
     }
 }
 
+// page control 的大小
+- (void)setPageControlDotSize:(CGSize)pageControlDotSize
+{
+    _pageControlDotSize = pageControlDotSize;
+    self.pageControl.dotSize = _pageControlDotSize;
+    [self.pageControl sizeToFit];
+}
+
+// 当前选中的小园标
+- (void)setCurrentSelectedPageDotImage:(UIImage *)currentSelectedPageDotImage
+{
+    if ([currentSelectedPageDotImage isKindOfClass:[UIImage class]]) {
+        _currentSelectedPageDotImage = currentSelectedPageDotImage;
+    }
+    self.pageControl.currentDotImage = _currentSelectedPageDotImage;
+}
+
+// 其他正常的小圆标
+- (void)setOtherNormalPageDotImage:(UIImage *)otherNormalPageDotImage
+{
+    if ([otherNormalPageDotImage isKindOfClass:[UIImage class]]) {
+        _otherNormalPageDotImage = otherNormalPageDotImage;
+    }
+    self.pageControl.dotImage = _otherNormalPageDotImage;
+    
+}
+
 #pragma mark - Getter Method
 - (UICollectionView *)collectionViewBanner
 {

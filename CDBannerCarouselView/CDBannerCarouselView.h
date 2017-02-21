@@ -35,8 +35,15 @@ typedef enum {
 
 // default is UIViewContentModeScaleToFill
 @property(nonatomic,assign) UIViewContentMode bannerContentMode;
-// 分页控件的位置，默认是居中显示
+/** 分页控件的位置，默认是居中显示 **/
 @property(nonatomic,assign) CDBannerCarouselViewPageContolAliment pageControlAliment;
+/** 分页控件小圆标大小 */
+@property (nonatomic, assign) CGSize pageControlDotSize;
+/** 当前分页控件小圆标图片 */
+@property (nonatomic, strong) UIImage *currentSelectedPageDotImage;
+/** 其他分页控件小圆标图片 */
+@property (nonatomic, strong) UIImage *otherNormalPageDotImage;
+
 
 // 自动滚动翻页的时间间隔，默认是3s
 // 注意:如果设置为0，则表示不允许自动翻页，只能手动翻页

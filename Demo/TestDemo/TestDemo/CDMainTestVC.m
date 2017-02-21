@@ -26,11 +26,15 @@
     
     imageList = @[@"h1.jpg",@"h2.jpg",@"h3.jpg"];
     bannerView = [[CDBannerCarouselView alloc] initBannerViewDefaultPlaceholderImage:nil WithDelegate:self];
-    bannerView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    bannerView.pageControlAliment = CDBannerCarouselViewPageContolAlimentRight;
-    [self.view addSubview:bannerView];
     bannerView.bounds = CGRectMake(0, 0, 320, 150);
     bannerView.center = self.view.center;
+    bannerView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
+    bannerView.pageControlAliment = CDBannerCarouselViewPageContolAlimentRight;
+    
+    bannerView.pageControlDotSize = CGSizeMake(10.0, 10.0);
+    
+    [self.view addSubview:bannerView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
