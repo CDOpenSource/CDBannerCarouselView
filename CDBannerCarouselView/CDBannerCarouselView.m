@@ -119,7 +119,7 @@ NSInteger const NumberOfItemsInSection = 10000;
     }
     self.pageControl.numberOfPages = _numberOfBanners;
     [self.pageControl sizeToFit];
-    [self.pageControl updateLayout];
+//    [self.pageControl updateLayout];
 }
 
 - (void)adjustWhenControllerViewWillAppera
@@ -165,7 +165,7 @@ NSInteger const NumberOfItemsInSection = 10000;
 #pragma mark  Item Size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGSize size = CGSizeMake(DefineScreenWidth, self.collectionViewBanner.bounds.size.height);
+    CGSize size = CGSizeMake(self.collectionViewBanner.bounds.size.width, self.collectionViewBanner.bounds.size.height);
     return size;
 }
 

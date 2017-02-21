@@ -427,6 +427,7 @@
 				DEVELOPMENT_TEAM = Q2292425WF;
 				GCC_PREFIX_HEADER = TestDemo/TestDemoPrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shenzhen.comtop.com.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +441,7 @@
 				DEVELOPMENT_TEAM = Q2292425WF;
 				GCC_PREFIX_HEADER = TestDemo/TestDemoPrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shenzhen.comtop.com.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
